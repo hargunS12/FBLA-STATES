@@ -1,0 +1,139 @@
+/* General styling for the entire page */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffcffb;
+}
+
+/* Resets styles for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Styling for the navigation bar */
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Styling for navigation links */
+.nav-links{
+    flex:1;
+    text-align:right ;
+}
+
+/* Styling for individual navigation links */
+.nav-links ul li{
+    list-style:none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+/* Styling for navigation link text */
+.nav-links ul li a{
+    color:white;
+    text-decoration:none;
+    font-size: 13px;
+}
+
+/* Styling for navigation link hover effect */
+.nav-links ul li::after{
+    content: '' ;
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+/* Expands the underline on navigation link hover */
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.name a{
+text-decoration: none;
+
+}
+/* Styling for the name section in the header */
+.name h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+
+/* Styling for the main content section */
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(20, 4, 30, 0.7)), url(images/lavender-6398415_1280.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/* Styling for the "jobs" section */
+#jobs {
+    text-align: center; /* Centers the content in the "jobs" section */
+}
+
+#jobs h2 {
+    color: white;
+    font-size: 28px; /* Increases the font size slightly */
+    margin-bottom: 20px;
+}
+
+/* Styling for individual job items */
+.job {
+    padding: 20px; /* Adds padding to the job items */
+    margin-bottom: 40px; /* Increases margin-bottom for better spacing */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for job buttons */
+.job button {
+    background-color: #e282f5;
+    color: white;
+    padding: 15px 30px; /* Increases the button padding */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 28px;
+}
+
+/* Styling for job button hover effect */
+.job button:hover {
+    background-color: #e282f5;
+}
+
+/* Styling for job details box */
+.detail-box {
+    background-color: #f7d0ff98;
+    border: 1px solid #e282f5;
+    border-radius: 4px;
+    padding: 20px; /* Increases padding for better spacing */
+    margin-bottom: 20px; /* Increases margin-bottom for better spacing */
+}
+
+/* Styling for forms */
+form {
+    max-width: 400px;
+    margin: auto;
+}
+
+/* Styling for various text elements within jobs */
+.job h3,
+.job-details h4,
+.job-details p {
+    color: white;
+    font-size: 30px; /* Increases the font size slightly */
+}

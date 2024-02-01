@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+    <section class="header">
+
+        <nav>
+            <div class="name">
+                <a href="/">
+                    <h2>BLOSSOM</h2>
+                </a>
+            </div>
+            <div class="nav-links" id="nav-links">
+                <div class="nav-links">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html"> HOME</a></li>
+                        <li><a href="about.html"> ABOUT</a></li>
+                        <li><a href="Benefits.html"> JOB BENEFITS</a></li>
+                        <li><a href="job-openings.html"> JOB OPENINGS</a></li>
+                        <li><a href="contact.html"> CONTACT</a></li>
+                    </ul>
+
+
+                </div>
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="contact-section">
+
+            <h1>Contact Us</h1>
+            <div class="border"></div>
+            <form class="contact-form" action="index.html" method="post">
+                <input type="text" class="contact-form-text" placeholder="Your name">
+                <input type="email" class="contact-form-text" placeholder="Your email">
+                <input type="number" class="contact-form-text" placeholder="Your phone">
+                <textarea class="contact-form-text" placeholder="Your message"></textarea>
+                <a href="index.html">
+                    <p class="contact-form-btn" onclick="show_alert();">Submit</p>
+                </a>
+            </form>
+        </div>
+</body>
+<script>
+    function show_alert() {
+        alert("The Blossom team has been contacted!");
+    }
+</script>
+
+</html>

@@ -1,0 +1,148 @@
+/* Global reset for all elements */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Enable smooth scrolling for the entire HTML document */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Styling for the header section with a background image */
+  .header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/pexels-skyler-ewing-4616661.jpg);
+    background-position : center;
+    background-size : cover; 
+    position : relative;
+  }
+  
+  /* Styling for the navigation bar */
+  nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Styling for navigation links */
+  .nav-links{
+    flex:1;
+    text-align:right ;
+  }
+  
+  .nav-links ul li{
+    list-style:none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+  }
+  
+  .nav-links ul li a{
+    color:white;
+    text-decoration:none;
+    font-size: 13px;
+  }
+  
+  /* Styling for navigation link hover effect */
+  .nav-links ul li::after{
+    content: '' ;
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  
+  /* Styling for navigation link hover effect */
+  .nav-links ul li:hover::after{
+    width: 100%;
+  }
+  
+  .name a{
+    text-decoration: none;
+  
+  }
+  
+  /* Styling for the name section */
+  .name h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  /* Styling for the contact section */
+  .contact-section{
+    background: url(bg.png) no-repeat center;
+    background-size: cover;
+    padding: 40px 0;
+  }
+  
+  /* Styling for the heading in the contact section */
+  .contact-section h1{
+    text-align: center;
+    color: #ddd;
+  }
+  
+  /* Styling for the decorative border in the contact section */
+  .border{
+    width: 100px;
+    height: 10px;
+    background: rgb(88, 149, 241);
+    margin: 40px auto;
+  }
+  
+  /* Styling for the contact form */
+  .contact-form{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+  }
+  
+  /* Styling for text input fields in the contact form */
+  .contact-form-text{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background: #111;
+    padding: 20px 40px;
+    outline: none;
+    color: #ddd;
+    transition: 0.5s;
+  }
+  
+  /* Styling for the focus state of text input fields */
+  .contact-form-text:focus{
+    box-shadow: 0 0 10px 4px #34495e;
+  }
+  
+  /* Styling for the textarea in the contact form */
+  textarea.contact-form-text{
+    resize: none;
+    height: 120px;
+  }
+  
+  /* Styling for the submit button in the contact form */
+  .contact-form-btn{
+    float: right;
+    border: 0;
+    background: rgb(88, 149, 241);
+    color: #fff;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  /* Styling for the hover effect of the submit button */
+  .contact-form-btn:hover{
+    background: #2980b9;
+  }
+  
